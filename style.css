@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Apply formatting for section*/
+.calc{
+    background: linear-gradient(to bottom, #a9ded9, #f4f3f3);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc .heading header{
+    position: absolute;
+    left: 43%;
+    top: 15%;
+    font-size: 25px;
+}
+
+hr {
+    border: 2px solid rgb(1, 50, 1);
+    width: 100%;
+}
+
+
+h1{
+    color: #021d3a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*formatting for text field and the button*/
+input[type="button"],input[type="reset"]{
+    width: 100px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #021d3a;
+    color: white;
+    border-radius: 10px;
+    border: solid aqua;
+}
+
+input[name="function"]{
+    width: 50px;
+}
+
+input[value="+"]{
+    height: 100px;
+}
+
+input[type="button"]:hover{
+    background-color: aqua;
+    border: solid #021d3a;
+    color: #021d3a;
+}
+
+input[type="reset"]:hover{
+    background-color: aqua;
+    border: solid #021d3a;
+    color: #021d3a;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #021d3a;
+    color: #021d3a;
+    border-radius: 10px;
+    background-color: aqua;
+    text-align: right;
+}
+
+/*Formatting for the table*/
+table{
+    width: 400px;
+    border: 3px solid #021d3a;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #021d3a;
+    height: 300px;
+} 
+
+.calc .function{
+    width: 50px;
+}
+

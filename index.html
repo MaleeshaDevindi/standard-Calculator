@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 01</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+        <section class="calc">
+        <div class="heading">
+            <!--Header Section Title-->
+            <header>
+                <hr/>
+                <h1>Calculator</h1>
+                <hr/>
+            </header>
+            
+        </div>
+        <!--Create the Structure-->
+        <table cellspacing="10px">
+            <tr>
+                <td colspan="3"><input type="text" id="screen" disabled></td>
+                <td class="function"><input type="reset" value="C" name="function" onclick="clearScreen()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="←" onclick="removeLastChar()"></td>
+                <td><input type="button" value= &lpar; onclick="operations(value)"></td>
+                <td><input type="button" value= &rpar; onclick="operations(value)"></td>
+                <td><input type="button" value="*" name="function" onclick="operations('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="operations('7')"></td>
+                <td><input type="button" value="8" onclick="operations('8')"></td>
+                <td><input type="button" value="9" onclick="operations('9')"></td>
+                <td><input type="button" value="/" name="function" onclick="operations('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="operations('4')"></td>
+                <td><input type="button" value="5" onclick="operations('5')"></td>
+                <td><input type="button" value="6" onclick="operations('6')"></td>
+                <td><input type="button" value="-" name="function" onclick="operations('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="operations('1')"></td>
+                <td><input type="button" value="2" onclick="operations('2')"></td>
+                <td><input type="button" value="3" onclick="operations('3')"></td>
+                <td rowspan="2"><input type="button" value="+" name="function" onclick="operations('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="operations('.')"></td>
+                <td><input type="button" value="0" onclick="operations('0')"></td>
+                <td><input type="button" value="=" onclick="calculation()"></td>
+            </tr>
+        </table>
+
+
+    </section>
+    <script type="text/javascript" src="custom.js"></script>
+    </body>
+</html>
